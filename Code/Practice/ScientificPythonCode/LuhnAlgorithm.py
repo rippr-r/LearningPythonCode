@@ -1,3 +1,5 @@
+# Made in freecodecamp
+# https://www.freecodecamp.org/learn
 def verify_card_number(card_number):
     # This function checks if a card number is valid using the Luhn algorithm
     sum_of_odd_digits = 0
