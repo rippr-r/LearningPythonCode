@@ -12,7 +12,7 @@ def encrypt():
 
     for i in range(len(plain)):
         key_encrypt = key[i % len(key)] # Repeat key if shorter than plain text]
-        cipher += hex(ord(plain[i]) ^ ord(key_encrypt))[2:] # XOR and convert to hex
+        cipher += hex(ord(plain[i]) ^ ord(key_encrypt))[2:].zfill(2) # XOR and convert to hex
     print(cipher)
 
 encrypt()
