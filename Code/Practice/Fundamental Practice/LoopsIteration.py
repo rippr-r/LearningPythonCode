@@ -8,8 +8,8 @@ def right_triangle_maker():
 
 def centered_triangle_maker():
     height = 5
-    for i in range(1, height + 1):
-        stars = '*' * (2*i - 1)
+    for i in range(1, height + 1): # Loop from 1 to height (inclusive)
+        stars = '*' * (2*i - 1) # Calculate the number of stars for the current row
         print(stars.center(2*height - 1)) # Center align the stars within a width of 2*height - 1
 
 def triangles():
